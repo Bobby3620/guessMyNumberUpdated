@@ -12,6 +12,9 @@ public class theNumber {
 
     public int ranNum(){
         favNum = (int)(favNum + Math.random() * 6);
+            if(favNum >= 49){
+                favNum = favNum - 7;
+            }
         return favNum;
     }
 
